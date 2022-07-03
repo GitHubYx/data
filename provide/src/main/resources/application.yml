@@ -1,0 +1,14 @@
+dubbo:
+  # 设置服务应用名称 保证唯一
+  application:
+    name: dubbo-service-provide
+  registry:
+    # 指定注册中心
+    address: zookeeper://192.168.10.100:2181
+    # 指定通讯协议和端口 dubbo协议 默认端口20880
+  protocol:
+    port: 20880
+    name: dubbo
+    # 添加 monitor 监控
+  monitor:
+    address: registry

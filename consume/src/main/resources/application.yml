@@ -1,0 +1,12 @@
+
+dubbo:
+  # 设置服务应用名称 保证唯一
+  application:
+    name: demo-consumer
+    # 指定注册中心
+  registry:
+    address: zookeeper://192.168.10.100:2181
+
+server:
+  port: 8082
+
